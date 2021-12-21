@@ -126,6 +126,9 @@ const clearValues = () => {
     start.innerText = "Start";
     next.classList.add("hide");
     clear.classList.add("hide");
+
+    // Clear local storage values so they don't perpetuate between sessions
+    localStorage.clear();
 }
 
 start.addEventListener("click", startGenerating);
