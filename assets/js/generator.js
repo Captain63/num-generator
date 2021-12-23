@@ -24,7 +24,6 @@ const liArrayLoop = array => {
     })
 }
 
-// Future features: create function to check if data's already in localStorage to then backfill content (persists if user refreshes by accident)
 const inProgress = () => {
     const outerLimit = JSON.parse(localStorage.getItem("outerLimit"));
 
@@ -42,9 +41,6 @@ const inProgress = () => {
         liArrayLoop(pastNumbersArr);
     }
 }
-
-
-
 
 // Declare start + variable capture function
 const startGenerating = () => {
